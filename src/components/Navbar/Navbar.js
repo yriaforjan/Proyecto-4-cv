@@ -21,12 +21,12 @@ export const Navbar = () => `
             </div>
             <li class="burgerMenu">
                 <button class="burgerMenu" id="burgerMenu">
-                        <img src="/public/icons/burger-menu.png" alt="menu icon"/>
+                        <img src="/icons/burger-menu.png" alt="menu icon"/>
                 </button>
             </li>
             <li>
                 <button id="themeBtn">
-                    <img src="/public/icons/dark-mode.png" alt="theme icon"/>
+                    <img src="/icons/dark-mode.png" alt="theme icon"/>
                 </button>
             </li>
         </ul>

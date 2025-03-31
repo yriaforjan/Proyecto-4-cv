@@ -54,8 +54,8 @@ export const Home = () => {
             if (!avatar) return;
         
             avatar.src = document.body.classList.contains("light") 
-            ? "/public/images/avatar-dark.png" 
-            : "/public/images/avatar-light.png";
+            ? `${data.avatar_dark}`
+            : `${data.avatar_light}`;
         };
 
         const toggleSections = () => {
@@ -93,8 +93,6 @@ export const Home = () => {
 
                 scrollButton.disabled = true;
             });
-        } else {
-            console.warn("No se encontró el botón de scroll.");
         }
     }, 0);
 
