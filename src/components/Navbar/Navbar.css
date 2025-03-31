@@ -1,0 +1,111 @@
+nav ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+nav li{
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: transform 0.3s ease-in-out;
+}
+
+.light nav li{
+    font-weight: 400;
+}
+
+nav li:hover{
+    font-weight: 600;
+    transform: scale(1.02);
+}
+
+nav li.logo >a{
+    display: flex;
+}
+
+nav li.logo img{
+    height: 80px;
+}
+
+nav img{
+    filter: invert(100%);
+    width: auto;
+}
+
+.light nav img{
+    filter: invert(0);
+}
+
+nav div.menu{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+nav button{
+    border: none;
+}
+
+nav .burgerMenu{
+    font-size: 30px;
+    display: none;
+}
+
+nav #themeBtn > img, nav #burgerMenu img{
+    height: 25px;
+}
+
+@media (max-width: 1024px){
+    nav ul{
+        gap: 40px;
+    }
+    nav div.menu{
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px){
+    nav ul{
+        gap: 40px;
+        justify-content: start;
+    }
+    nav .burgerMenu{
+        display: inline-block;
+    }
+    nav div.menu{
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        background-color: var(--bg-dark);
+        opacity: 95%;
+        flex-direction: column;
+        padding: 20px 10px;
+        transition: right 0.3s ease;
+        z-index: 100;
+    }
+    .light div.menu{
+        background-color: var(--bg-light);
+        color: var(--primary-light);
+    }
+    nav div.menu.active{
+        right: 0;
+    }
+    nav ul > li:last-child{
+        margin-left: auto;
+    }
+}
+
+@media(max-width: 480px){
+    nav ul{
+        gap: 40px;
+    }
+    nav li.logo img{
+        height: 60px;
+    }
+}

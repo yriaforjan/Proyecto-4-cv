@@ -1,0 +1,142 @@
+section.home{
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+} 
+
+section.home #profile{
+    place-self: center;
+    display: flex;
+    align-items: end;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+section.home h1{
+    font-size: 80px;
+}
+
+section.home #intro > p{
+    font-size: 20px;
+    text-align: right;
+}
+
+section.home #avatar{
+    height: 300px;
+}
+
+section.home > #about > p{
+    text-align: justify;
+    border-left: 2px solid var(--primary-dark);
+    border-right: 2px solid var(--primary-dark);
+    border-radius: 15px;
+    padding: 0 40px;
+}
+
+.light section.home > #about > p{
+    border-color: var(--primary-light);
+}
+
+section.home > #skills{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+section.home > #skills p{
+    background-color: var(--primary-dark);
+    color: var(--bg-dark);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.light section.home > #skills p{
+    background-color: var(--primary-light);
+    color: var(--bg-light);
+}
+
+section.home button{
+    align-self: center;
+    cursor: help;
+}
+
+section.home button:disabled{
+    cursor: not-allowed;
+}
+
+section.home > section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+}
+
+section.home > section > ul{
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+section.home section li{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+section.home section .icon{
+    font-size: 30px;
+}
+
+section.home section p{
+    text-align: justify;
+}
+
+@media (max-width: 1024px){
+    section.home #profile{
+        gap: 40px;
+    }
+    section.home h1{
+        font-size: 55px;
+    }
+    section.home #intro > p{
+        font-size: 18px;
+    }
+    section.home #avatar{
+        height: 240px;
+    }
+}
+
+@media (max-width: 768px){
+    section.home #profile{
+        justify-content: center;
+        gap: 60px;
+    }
+    section.home h1{
+        text-align: center;
+    }
+    section.home #intro > p, section.home > #about > p{
+        text-align: center;
+    }
+    section.home > #skills{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px){
+    section.home{
+        padding: 0;
+    }
+    section.home > #about > p{
+        border: none;
+        padding: 0;
+    }
+    section.home > section{
+        padding: 10px;
+    }
+    section.home section p{
+        text-align: start;
+    }
+}

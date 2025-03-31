@@ -1,0 +1,10 @@
+header{
+    height: 15vh;
+    background-image: inherit;
+    background-size: inherit;
+    background-position: inherit;
+    background-attachment: fixed;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+}

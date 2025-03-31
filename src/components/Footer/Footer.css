@@ -1,0 +1,12 @@
+footer{
+    background-image: inherit;
+    background-size: inherit;
+    background-position: inherit;
+    background-attachment: fixed;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    bottom: 0;
+}

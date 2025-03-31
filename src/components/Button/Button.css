@@ -1,0 +1,17 @@
+.myBtn{
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--decoration);
+}
+
+.myBtn:hover{
+    background-color: var(--decoration);
+}
+
+.myBtn:disabled{
+    background-color: var(--hover);
+    border-color: var(--hover);
+}

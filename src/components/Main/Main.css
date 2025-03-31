@@ -1,0 +1,14 @@
+main{
+    min-height: 75vh;
+    padding: 20px 60px;
+}
+
+main section{
+    padding: 0 40px;
+}
+
+@media(max-width: 480px){
+    main{
+        padding: 20px;
+    }
+}
