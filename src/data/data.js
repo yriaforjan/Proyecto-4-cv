@@ -3,7 +3,7 @@ export const data = {
     occupation: "Web Development Student",
     avatar_dark: "/images/avatar-light.png",
     avatar_light: "/images/avatar-dark.png",
-    about: "I'm passionate about web development and currently pursuing a Higher Degree in Web Development and a Master's in Full-Stack Development. Previously, I studied and worked in physiotherapy, which helped me develop strong problem-solving and communication skills. Now, I focus on creating functional, visually appealing web applications with an emphasis on clean design and user experience. Always eager to learn, I continuously explore new technologies to build innovative digital solutions.",
+    about: "I'm passionate about web development and currently pursuing a Higher Technician in Web Development and a Full-Stack Web Development Master's Program. Previously, I studied and worked in physiotherapy, which helped me develop strong problem-solving and communication skills. Now, I focus on creating functional, visually appealing web applications with an emphasis on clean design and user experience. Always eager to learn, I continuously explore new technologies to build innovative digital solutions.",
 
     skills: [
         "HTML5",
@@ -63,23 +63,27 @@ export const data = {
   
     education: {
         higherDegree: {
-            degree: "Higher Degree in Web Development",
+            name: "Higher Technician in Web Development",
             entity: "thePower Business School (Spain)",
+            entity_logo: "/images/thepower_logo.webp",
             duration: "2024 - Currently"
         },
         master: {
-            degree: "Master's Degree in Full-Stack Development",
+            name: "Master's Program in Full-Stack Web Development",
             entity: "thePower Business School (Spain)",
+            entity_logo: "/images/thepower_logo.webp",
             duration: "2024 - Currently"
         },
         physiotherapyDegree: {
-            degree: "Degree in Physiotherapy",
+            name: "Bachelor's Degree in Physiotherapy",
             entity: "University of A Coruña",
+            entity_logo: "/images/udc_logo.png",
             duration: "2015 - 2020"
         },
         physiotherapyMaster: {
-            degree: "Master's Degree in Pediatric Physiotherapy",
+            name: "Master's Degree in Pediatric Physiotherapy",
             entity: "Pontifical University of Salamanca",
+            entity_logo: "/images/upsa_logo.png",
             duration: "2020 - 2021"
         }
     },
@@ -87,45 +91,61 @@ export const data = {
     projects: [
         {
             title: "PixHive",
-            description: "This is my first asynchronous project, built with vite and the Unsplash API.",
+            description: "An asynchronous project, built with vite and the Unsplash API",
             image: "/images/projects/pixhive.png",
             github: "https://github.com/yriaforjan/Proyecto-Web-Asincrono.git",
             link: "https://pixhive.vercel.app/"
         },
         {
             title: "My Portfolio",
-            description: "This is my first project using Vite, a single-page application (SPA) for my personal portfolio.",
-            image: "/images/projects/pixhive.png",
+            description: "My first project using Vite: a SPA for my personal portfolio",
+            image: "/images/projects/portfolio.png",
             github: "https://github.com/yriaforjan/Proyecto-2-portfolio.git",
             link: "https://portfolio-yriaforjan.vercel.app/"
         },
         {
-            title: "PC Components Mockup",
-            description: "This is a dynamic gallery project using JavaScript",
+            title: "PcComponentes Mockup",
+            description: "A dynamic gallery project using JavaScript and CSS3",
             image: "/images/projects/galeriadinamica.png",
             github: "https://github.com/yriaforjan/practica_DOM.git",
             link: "https://practica-domgaleria-dinamica.vercel.app/",
         },
         {
             title: "Small Business Website",
-            description: "This is my first complete project built with HTML5 and CSS3",
+            description: "My first complete project built with HTML5 and CSS3",
             image: "/images/projects/bisutere.png",
             github: "https://github.com/yriaforjan/Proyecto-1.git",
             link: "https://www.bisutere.com/",
         },
         {
             title: "Landing Page Prototype",
-            description: "This is my first mini-project using CSS Flexbox",
+            description: "My first mini-project, using CSS Flexbox",
             image: "/images/projects/jvcasesores.png",
             github: "https://github.com/yriaforjan/entrega_flexbox.git",
             link: "https://jvc-asesores.vercel.app/"
         },
     ],
 
-    social: {
-        email: "yriaforjan.oliveira@gmail.com",
-        github: "https://github.com/yriaforjan",
-        linkedin: "https://www.linkedin.com/in/yria-forjan-oliveira/",
-        telegram: "https://t.me/yriaforjan"
-    }
+    socials: [
+        {
+            name: "email",
+            adress: "yriaforjan.oliveira@gmail.com",
+            icon: "/icons/email.png",
+        },
+        {
+            name: "GitHub",
+            adress: "https://github.com/yriaforjan",
+            icon: "/icons/github.png",
+        },
+        {
+            name: "LinkedIn",
+            adress: "https://www.linkedin.com/in/yria-forjan-oliveira/",
+            icon: "/icons/linkedin.png",
+        },
+        {
+            name: "Telegram",
+            adress: "https://t.me/yriaforjan",
+            icon: "/icons/telegram.png",
+        }
+    ]
 };
