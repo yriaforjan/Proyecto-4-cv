@@ -1,19 +1,8 @@
-section.projects{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    margin: auto;
+.projects{
+    margin-top: 0;
 }
 
-section.projects > p{
-    font-size: 20px;
-    margin-bottom: 40px;
-    text-align: center;
-    font-style: italic;
-}
-
-section.projects > div{
+.projects > div{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -21,7 +10,10 @@ section.projects > div{
 }
 
 @media (max-width: 480px){
-    section.projects{
+    .projects{
         padding: 0;
+    }
+    .projects > div{
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
 }

@@ -1,14 +1,36 @@
 main{
-    min-height: 75vh;
+    min-height: calc(80vh - 40px);
     padding: 20px 60px;
+    display:flex;
 }
 
 main section{
-    padding: 0 40px;
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+main section > p{
+    font-size: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-style: italic;
+}
+
+@media (max-width: 768px){
+    main{
+        padding: 40px;
+    }
 }
 
 @media(max-width: 480px){
     main{
+        min-height: calc(75vh - 40px);
         padding: 20px;
+        padding-top: 60px;
     }
 }

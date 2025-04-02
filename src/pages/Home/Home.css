@@ -1,11 +1,9 @@
-section.home{
-    min-height: 75vh;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
+.home{
+    margin: auto;
+    gap: 50px;
 } 
 
-section.home #profile{
+.home #profile{
     place-self: center;
     display: flex;
     align-items: end;
@@ -13,16 +11,16 @@ section.home #profile{
     gap: 60px;
 }
 
-section.home #intro > p{
+.home #intro > p{
     font-size: 20px;
     text-align: right;
 }
 
-section.home #avatar{
+.home #avatar{
     height: 300px;
 }
 
-section.home > #about > p{
+.home > #about > p{
     text-align: justify;
     border-left: 2px solid var(--primary-dark);
     border-right: 2px solid var(--primary-dark);
@@ -30,115 +28,116 @@ section.home > #about > p{
     padding: 0 40px;
 }
 
-.light section.home > #about > p{
+.light .home > #about > p{
     border-color: var(--primary-light);
 }
 
-section.home > #skills{
+.home > #skills{
     display: flex;
+    width: 100%;
     justify-content: space-between;
     gap: 20px;
 }
 
-section.home > #skills p{
+.home > #skills p{
     background-color: var(--primary-dark);
     color: var(--bg-dark);
     padding: 10px;
     border-radius: 15px;
 }
 
-.light section.home > #skills p{
+.light .home > #skills p{
     background-color: var(--primary-light);
     color: var(--bg-light);
 }
 
-section.home button{
+.home button{
     align-self: center;
     cursor: help;
 }
 
-section.home button:disabled{
+.home button:disabled{
     cursor: not-allowed;
 }
 
-section.home h3{
+.home h3{
     text-transform: uppercase;
     font-size: 25px;
     color: var(--highlight-dark);
 }
 
-section.home > section{
+.home > section{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 80px;
 }
 
-section.home > section > ul{
+.home > section > ul{
     padding: 40px 0;
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
 
-section.home section li{
+.home section li{
     display: flex;
     align-items: center;
     gap: 1em;
 }
 
-section.home section .icon{
+.home section .icon{
     font-size: 30px;
 }
 
-section.home section p{
+.home section p{
     text-align: justify;
 }
 
 @media (max-width: 1024px){
-    section.home #profile{
+    .home{
+        padding: 0;
+    }
+    .home #profile{
         gap: 20px;
     }
-    section.home h1{
+    .home h1{
         font-size: 50px;
     }
-    section.home #intro > p{
+    .home #intro > p{
         font-size: 18px;
     }
-    section.home #avatar{
+    .home #avatar{
         height: 230px;
     }
 }
 
 @media (max-width: 768px){
-    section.home #profile{
+    .home #profile{
         justify-content: center;
         gap: 60px;
     }
-    section.home h1{
+    .home h1{
         text-align: center;
     }
-    section.home #intro > p, section.home > #about > p{
+    .home #intro > p, .home > #about > p{
         text-align: center;
     }
-    section.home > #skills{
+    .home > #skills{
         flex-wrap: wrap;
         justify-content: center;
     }
 }
 
 @media (max-width: 480px){
-    section.home{
-        padding: 0;
-    }
-    section.home > #about > p{
+    .home > #about > p{
         border: none;
         padding: 0;
     }
-    section.home > section{
+    .home > section{
         padding: 10px;
     }
-    section.home section p{
+    .home section p{
         text-align: start;
     }
 }

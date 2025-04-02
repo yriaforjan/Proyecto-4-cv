@@ -4,6 +4,7 @@
     border-radius: 5px;
     display: flex;
     align-items: center;
+    gap: 10px;
     border: 2px solid var(--decoration);
 }
 
@@ -14,4 +15,13 @@
 .myBtn:disabled{
     background-color: var(--hover);
     border-color: var(--hover);
+}
+
+.myBtn img{
+    height: 20px;
+    filter: invert(90%);
+}
+
+.light .myBtn img{
+    filter: none;
 }

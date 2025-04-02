@@ -1,0 +1,47 @@
+.contact{
+    margin-top: 0;
+}
+
+.contact > div{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 100px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.contact ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact ul img{
+    height: 40px;
+    filter: invert(90%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.light .contact ul img{
+    filter: none;
+}
+
+.contact ul img:hover{
+    transform: scale(1.1);
+}
+
+@media(max-width: 1024px){
+    .contact > div{
+        flex-direction: column;
+    }
+    .contact ul{
+        flex-direction: row;
+    }
+}
+
+@media(max-width: 480px){
+    .contact{
+        padding: 0;
+    }
+}

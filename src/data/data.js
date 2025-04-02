@@ -129,22 +129,22 @@ export const data = {
     socials: [
         {
             name: "email",
-            adress: "yriaforjan.oliveira@gmail.com",
+            address: "mailto:yriaforjan.oliveira@gmail.com",
             icon: "/icons/email.png",
         },
         {
             name: "GitHub",
-            adress: "https://github.com/yriaforjan",
+            address: "https://github.com/yriaforjan",
             icon: "/icons/github.png",
         },
         {
             name: "LinkedIn",
-            adress: "https://www.linkedin.com/in/yria-forjan-oliveira/",
+            address: "https://www.linkedin.com/in/yria-forjan-oliveira/",
             icon: "/icons/linkedin.png",
         },
         {
             name: "Telegram",
-            adress: "https://t.me/yriaforjan",
+            address: "https://t.me/yriaforjan",
             icon: "/icons/telegram.png",
         }
     ]

@@ -1,19 +1,8 @@
-section.education{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    margin: auto;
+.education{
+    margin-top: 0;
 }
 
-section.education > p{
-    font-size: 20px;
-    margin-bottom: 40px;
-    text-align: center;
-    font-style: italic;
-}
-
-section.education > div{
+.education > div{
     display: flex;
     flex-direction: column;
     width: fit-content;
@@ -23,13 +12,13 @@ section.education > div{
     margin-bottom: 60px;
 }
 
-.light section.education > div{
+.light .education > div{
     background-color: var(--bg-light);
     border-color: var(--primary-light);
 }
 
 @media (max-width: 480px){
-    section.education{
+    .education{
         padding: 0;
     }
 }
