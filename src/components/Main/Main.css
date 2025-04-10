@@ -1,5 +1,6 @@
 main{
-    min-height: calc(80vh - 40px);
+    min-height: calc(85vh - 40px);
+    margin-top: 10vh;
     padding: 20px 60px;
     display:flex;
 }
