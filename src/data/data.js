@@ -90,8 +90,8 @@ export const data = {
 
     projects: [
         {
-            title: "PixHive",
-            description: "An asynchronous project, built with vite and the Unsplash API",
+            title: "PixHive App",
+            description: "An asynchronous project, built with Vite and the Unsplash API",
             image: "/images/projects/pixhive.png",
             github: "https://github.com/yriaforjan/Proyecto-Web-Asincrono.git",
             link: "https://pixhive.vercel.app/"
@@ -110,6 +110,13 @@ export const data = {
             github: "https://github.com/yriaforjan/practica_DOM.git",
             link: "https://practica-domgaleria-dinamica.vercel.app/",
         },
+        {
+            title: "Library Management App",
+            description: "Web app to manage books, XML data import/export via JavaScript, designed with Bootstrap.",
+            image: "/images/projects/biblioteca.png",
+            github: "https://github.com/yriaforjan/registro-biblioteca.git",
+            link: "https://registro-biblioteca.vercel.app/",
+          },
         {
             title: "Small Business Website",
             description: "My first complete project built with HTML5 and CSS3",

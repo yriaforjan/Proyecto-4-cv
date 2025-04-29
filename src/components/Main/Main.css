@@ -31,7 +31,6 @@ main section > p{
 @media(max-width: 480px){
     main{
         min-height: calc(80vh - 40px);
-        padding: 20px;
-        padding-top: 60px;
+        padding: 60px 20px;
     }
 }
