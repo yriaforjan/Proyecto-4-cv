@@ -90,6 +90,13 @@ export const data = {
 
     projects: [
         {
+            title: "Dootzy App",
+            description: "Web planner with offline support, using Vanilla JS and Vite.",
+            image: "/images/projects/dootzy.png",
+            github: "https://github.com/Cvidal84/proyecto5.git",
+            link: "https://dootzy.vercel.app/"
+        },
+        {
             title: "PixHive App",
             description: "An asynchronous project, built with Vite and the Unsplash API",
             image: "/images/projects/pixhive.png",
