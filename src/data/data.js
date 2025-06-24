@@ -91,14 +91,14 @@ export const data = {
     projects: [
         {
             title: "Professional Athlete Landing",
-            description: "Landing page using Vite with Vanilla JS and Tailwind CSS. (Private repo)",
+            description: "Landing page using Vite with Vanilla JS and Tailwind CSS (Private repo)",
             image: "/images/projects/lidiaparada.png",
             github: "https://github.com/yriaforjan/landing-lidiap.git",
             link: "https://lidiaparada.vercel.app/"
         },
         {
             title: "Dootzy App",
-            description: "Web planner with offline support, using Vanilla JS and Vite.",
+            description: "Web planner with offline support, using Vanilla JS and Vite",
             image: "/images/projects/dootzy.png",
             github: "https://github.com/Cvidal84/proyecto5.git",
             link: "https://dootzy.vercel.app/"
