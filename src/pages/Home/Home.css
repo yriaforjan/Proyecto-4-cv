@@ -18,6 +18,8 @@
 
 .home #avatar {
   height: 300px;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
 }
 
 .home > #about > p {

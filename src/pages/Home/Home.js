@@ -74,10 +74,22 @@ export const Home = () => {
     const updateAvatar = () => {
       const avatar = document.getElementById("avatar");
       if (!avatar) return;
-      avatar.src = document.body.classList.contains("light")
-        ? data.avatar_dark
-        : data.avatar_light;
+
+      avatar.style.opacity = "0";
+
+      setTimeout(() => {
+        const newSrc = document.body.classList.contains("light")
+          ? data.avatar_dark
+          : data.avatar_light;
+
+        if (avatar.src !== newSrc) avatar.src = newSrc;
+
+        setTimeout(() => {
+          avatar.style.opacity = "1";
+        }, 50);
+      }, 250);
     };
+
     document.addEventListener("themeChanged", updateAvatar);
 
     // Alternar entre "I love" y "I hate"
