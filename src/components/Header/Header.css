@@ -14,10 +14,3 @@ header{
     align-items: center;
     justify-content: center;
 }
-
-@media(max-width: 480px){
-    header{
-        height: 15vh;
-        padding: 20px;
-    }
-}

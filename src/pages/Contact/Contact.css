@@ -8,13 +8,14 @@
     justify-content: center;
     gap: 100px;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .contact ul{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 6rem 0 6rem 0;
 }
 
 .contact ul img{
@@ -37,6 +38,7 @@
     }
     .contact ul{
         flex-direction: row;
+        padding: 0 1rem 0 1rem;
     }
 }
 

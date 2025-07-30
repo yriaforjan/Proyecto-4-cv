@@ -1,43 +1,96 @@
 import "./Education.css";
-import { EducationAccordion } from "../../components/EducationAccordion/EducationAccordion";
+import {
+  EducationCard,
+  setupEducationCardEvents,
+} from "../../components/EducationCard/EducationCard";
 import { data } from "../../data/data";
 
 export const Education = () => {
-    const template = `
-        <section class="education">
-            <h2>My Educational Journey</h2>
-            <p>From Healthcare to Code</p>
-            <div>
-            ${Object.values(data.education).map((title) =>
-                EducationAccordion(title)
-            ).join("")}
-            </div>
-        </section>
-    `;
+  const devEducation = [data.education.higherDegree, data.education.master];
+  const healthEducation = [
+    data.education.physiotherapyDegree,
+    data.education.physiotherapyMaster,
+  ];
 
-    setTimeout(()=>{
-        const accordionBtns = document.querySelectorAll(".accordionBtn");
-        
-        for(const btn of accordionBtns){
-            const div = btn.closest(".education-accordion");
-            const detail = div.querySelector(".detail");
+  let devOnTop = true;
 
-            if(btn && detail){
-                btn.addEventListener("click", () => {
-                    div.classList.toggle("open");
-                    
-                    const isOpen = div.classList.contains("open");
-                    btn.textContent = isOpen ? "–" : '▾'; 
-                    detail.style.display = isOpen ? 'flex' : 'none';
+  const renderCards = (arr) => arr.map((edu) => EducationCard(edu)).join("");
 
-                    if(isOpen){
-                        detail.scrollIntoView({behavior: "smooth", block: "center"});
-                    }
-                });
-            }
-        }
-    }, 0)
+  const template = `
+    <section class="education">
+      <h2>My Educational Journey</h2>
+      <p>From Healthcare to Code</p>
+      <div id="education-container" class="education-cards">
+        <div id="devSection" class="education-group">
+          ${renderCards(devEducation)}
+        </div>
 
-    return template;
+        <div id="divider" class="divider" role="button" tabindex="0" aria-pressed="false" aria-label="Toggle education sections order">
+          <span>🩺</span>
+        </div>
+
+        <div id="healthSection" class="education-group">
+          ${renderCards(healthEducation)}
+        </div>
+      </div>
+    </section>
+  `;
+
+  setTimeout(() => {
+    setupEducationCardEvents();
+
+    const divider = document.getElementById("divider");
+    const devSection = document.getElementById("devSection");
+    const healthSection = document.getElementById("healthSection");
+
+    const updateDividerText = () => {
+      divider.querySelector("span").textContent = devOnTop ? "🩺" : "💻";
+      divider.setAttribute("aria-pressed", devOnTop ? "false" : "true");
+    };
+
+    const toggleSections = () => {
+      // Añadir clase de "encogerse"
+      devSection.classList.add("fade-shrink");
+      healthSection.classList.add("fade-shrink");
+
+      setTimeout(() => {
+        // Intercambiar contenido
+        const tempHTML = devSection.innerHTML;
+        devSection.innerHTML = healthSection.innerHTML;
+        healthSection.innerHTML = tempHTML;
+
+        // Reactivar eventos flip
+        setupEducationCardEvents();
+
+        // Cambiar flag y actualizar texto
+        devOnTop = !devOnTop;
+        updateDividerText();
+
+        // Quitar clase shrink y poner expand
+        devSection.classList.remove("fade-shrink");
+        healthSection.classList.remove("fade-shrink");
+
+        devSection.classList.add("fade-expand");
+        healthSection.classList.add("fade-expand");
+
+        // Quitar clase expand después animación
+        setTimeout(() => {
+          devSection.classList.remove("fade-expand");
+          healthSection.classList.remove("fade-expand");
+        }, 400);
+      }, 400);
+    };
+
+    divider.addEventListener("click", toggleSections);
+    divider.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        toggleSections();
+      }
+    });
+
+    updateDividerText();
+  }, 0);
+
+  return template;
 };
-    

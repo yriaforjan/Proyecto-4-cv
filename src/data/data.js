@@ -9,10 +9,12 @@ export const data = {
         "HTML5",
         "CSS3",
         "JavaScript",
-        "Node.js",
         "Java",
+        "Vite",
+        "Git",
+        "Github",
         "MySQL",
-        "Git"
+        "VSCode",
     ],
 
     loves: [
@@ -90,57 +92,81 @@ export const data = {
 
     projects: [
         {
+            title: "Yumflix (under development)",
+            description: "Sleek web app inspired by Netflix's iconic interface, showcasing delicious recipes fetched live from the ThemealDB REST API. Built with Vite and modular JavaScript, it features responsive CSS3 design and a user-friendly light/dark theme toggle. Currently, the project is under active development with exciting features on the way.",
+            tech: ["Vite", "JS", "CSS3", "Rest API"],
+            image: "/images/projects/yumflix.png",
+            github: "",
+            link: ""
+        },
+        {
             title: "Professional Athlete Landing",
-            description: "Landing page using Vite with Vanilla JS and Tailwind CSS (Private repo)",
+            description: "Responsive landing page developed with Vite, Tailwind CSS, and modern JavaScript. Features smooth scrolling navigation, parallax effects, and animations powered by Intersection Observer. Additionally, it includes a dynamic news banner that fetches recent relevant updates from a regional news source via RSS.",
+            tech: ["Vite", "JS", "Tailwind", "EmailJS", "RS Feed", "Intersection Observer"],
             image: "/images/projects/lidiaparada.png",
             github: "https://github.com/yriaforjan/landing-lidiap.git",
             link: "https://lidiaparada.vercel.app/"
         },
         {
             title: "Dootzy App",
-            description: "Web planner with offline support, using Vanilla JS and Vite",
+            description: "Responsive task and calendar management app built with Vite and modern JavaScript. It integrates FullCalendar.io for scheduling, offers offline functionality through PWA support, and ensures persistent data with localStorage. Developed as a collaborative project, it uses GitHub branches and commits to manage features and teamwork efficiently.",
+            tech: ["Vite", "JS", "CSS3", "PWA", "FullCalendar", "WeatherAPI", "LocalStorage", "GitHub (team project)"],
             image: "/images/projects/dootzy.png",
             github: "https://github.com/Cvidal84/proyecto5.git",
             link: "https://dootzy.vercel.app/"
         },
         {
             title: "PixHive App",
-            description: "An asynchronous project, built with Vite and the Unsplash API",
+            description: "Asynchronous web app built with Vite and modern JavaScript. It uses the Unsplash API to dynamically display high-quality images, featuring pagination and orientation filters. Created for educational purposes to practice API consumption, with a focus on designing a clean and intuitive user interface.",
+            tech: ["Vite", "JS", "CSS3", "UnsplashAPI"],
             image: "/images/projects/pixhive.png",
             github: "https://github.com/yriaforjan/Proyecto-Web-Asincrono.git",
             link: "https://pixhive.vercel.app/"
         },
         {
+            title: "My Digital CV",
+            description: "A digital resume web app showcasing my education, experience, and skills in a clean and modern way. Built as a SPA using Vite and vanilla JavaScript, featuring responsive design, interactive animations, and light/dark mode support. This project highlights my frontend abilities and serves as my professional introduction.",
+            tech: ["Vite", "JavaScript", "CSS3", "SPA", "Intersection Observer"],
+            image: "/images/projects/cv.png",
+            github: "https://github.com/yriaforjan/Proyecto-4-cv.git",
+            link: "https://yriaforjan-cv.vercel.app"
+        },
+        {
             title: "My Portfolio",
-            description: "My first project using Vite: a SPA for my personal portfolio",
+            description: "My first project using components and focusing on modularization. Built with Vite as a Single Page Application (SPA), it serves as my personal portfolio to showcase all my projects moving forward. The app emphasizes clean, maintainable code structure and responsive design.",
+            tech: ["Vite", "JS", "CSS3"],
             image: "/images/projects/portfolio.png",
             github: "https://github.com/yriaforjan/Proyecto-2-portfolio.git",
             link: "https://portfolio-yriaforjan.vercel.app/"
         },
         {
             title: "PcComponentes Mockup",
-            description: "A dynamic gallery project using JavaScript and CSS3",
+            description: "A faithful visual replication of the PcComponentes gallery crafted with HTML, CSS and JavaScript. The project highlights precise DOM manipulation, event handling, and responsive design to accurately reproduce the original user interface experience.",
+            tech: ["HTML5", "CSS3", "JS"],
             image: "/images/projects/galeriadinamica.png",
             github: "https://github.com/yriaforjan/practica_DOM.git",
             link: "https://practica-domgaleria-dinamica.vercel.app/",
         },
         {
             title: "Library Management App",
-            description: "Web app to manage books, XML data import/export via JavaScript, designed with Bootstrap.",
+            description: "A simple web application for managing library books, built with HTML5, JavaScript, and Bootstrap via CDN. Features include adding, viewing, and searching books, as well as importing and exporting data in XML format.",
+            tech: ["HTML5", "Bootstrap", "JS", "XML"],
             image: "/images/projects/biblioteca.png",
             github: "https://github.com/yriaforjan/registro-biblioteca.git",
             link: "https://registro-biblioteca.vercel.app/",
           },
         {
             title: "Small Business Website",
-            description: "My first complete project built with HTML5 and CSS3",
+            description: "My first complete project built entirely with HTML5 and CSS3. It focuses on semantic markup, accessibility, and clean, modern design. It showcases product offerings with an intuitive layout and smooth user experience.",
+            tech: ["HTML5", "CSS3"],
             image: "/images/projects/bisutere.png",
             github: "https://github.com/yriaforjan/Proyecto-1.git",
             link: "https://www.bisutere.com/",
         },
         {
             title: "Landing Page Prototype",
-            description: "My first mini-project, using CSS Flexbox",
+            description: "My first mini-project, a prototype landing page designed using CSS Flexbox to create a flexible and responsive layout. It highlights mastering layout techniques.",
+            tech: ["HTML5", "CSS3"],
             image: "/images/projects/jvcasesores.png",
             github: "https://github.com/yriaforjan/entrega_flexbox.git",
             link: "https://jvc-asesores.vercel.app/"
@@ -148,11 +174,6 @@ export const data = {
     ],
 
     socials: [
-        {
-            name: "email",
-            address: "mailto:yriaforjan.oliveira@gmail.com",
-            icon: "/icons/email.png",
-        },
         {
             name: "GitHub",
             address: "https://github.com/yriaforjan",

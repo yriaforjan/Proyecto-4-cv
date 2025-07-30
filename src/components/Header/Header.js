@@ -12,12 +12,12 @@ export const changeTheme = () => {
 };
 
 export const changeIcon = () => {
-  const themeIcon = document.querySelector("#themeBtn > img")
+  const themeIcon = document.querySelector("#themeBtn > img");
   themeIcon.src = themeIcon.src.includes("/icons/dark-mode.png")
-  ? "/icons/light-mode.png"
-  : "/icons/dark-mode.png";
+    ? "/icons/light-mode.png"
+    : "/icons/dark-mode.png";
 };
 
 export const Header = () => `
-  <header>${Navbar()}</header>
+  <header class="fade-down">${Navbar()}</header>
 `;

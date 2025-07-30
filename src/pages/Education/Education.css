@@ -1,24 +1,110 @@
-.education{
-    margin-top: 0;
+.education {
+  margin-top: 0;
 }
 
-.education > div{
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    background-color: var(--bg-dark);
-    border: 2px solid var(--primary-dark);
-    border-radius: 10px;
-    margin-bottom: 60px;
+.education > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  gap: 40px;
 }
 
-.light .education > div{
-    background-color: var(--bg-light);
-    border-color: var(--primary-light);
+.education-group {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-@media (max-width: 480px){
-    .education{
-        padding: 0;
-    }
+.education-group.swap-up {
+  transform: translateY(-120%);
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.education-group.swap-down {
+  transform: translateY(120%);
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.divider {
+  width: 100%;
+  text-align: center;
+  margin: 2rem 0;
+  position: relative;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--highlight-dark);
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divider span {
+  background: var(--bg-light);
+  border-radius: 50%;
+  height: 28px;
+  width: 28px;
+  padding: 1.5rem;
+  position: relative;
+  z-index: 2;
+  line-height: 28px;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  right: 1rem;
+  border-top: 2px solid var(--highlight-dark);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.fade-shrink {
+  animation: shrinkVertical 0.4s forwards;
+  transform-origin: center;
+}
+
+.fade-expand {
+  animation: expandVertical 0.4s forwards;
+  transform-origin: center;
+}
+
+@keyframes shrinkVertical {
+  to {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+}
+
+@keyframes expandVertical {
+  from {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+
+@media (max-width: 480px) {
+  .education {
+    padding: 0;
+  }
 }

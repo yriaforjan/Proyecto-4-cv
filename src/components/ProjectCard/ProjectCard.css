@@ -1,50 +1,99 @@
 .project-card {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  opacity: 0;
+  transform: translateY(80px) scale(0.95);
+  transition: transform 1s ease-out, opacity 1s ease-out;
 }
 
-.project-card img {
-    width: 100%;
-    height: 250px;
-    border-radius: 10px;
-    object-fit: cover;
-    object-position: top left;
+.project-card.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.project-card > .image-container {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.project-card > .image-container > img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+.project-card > .image-container > .detail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #9c7fd7e8;
+  color: #000;
+  padding: 1rem;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  pointer-events: none;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.image-container:hover > .detail,
+.image-container:focus-within > .detail {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .project-card > .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-  
+
+.project-card h3 {
+  color: var(--decoration);
+}
+
 .project-card > .header > div {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
-  
+
 .project-card > .header > div > a > img {
-    width: 20px;
-    height: 20px;
-    filter: invert(90%);
-    transition: all 0.3s ease-in-out;
+  width: 20px;
+  height: 20px;
+  filter: invert(90%);
+  transition: all 0.3s ease-in-out;
 }
 
 body.light .project-card > .header > div > a > img {
-    filter: none;
-}
-  
-.project-card > .header > div > a > img:hover {
-    transform: scale(1.1);
-}
-  
-.project-card > .detail {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  filter: none;
 }
 
-.project-card > .detail > p {
-    text-align: justify;
+.project-card > .header > div > a > img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 480px) {
+  .project-card > .image-container, .project-card > .image-container > img {
+    height: 200px;
+  }
+  .project-card > .image-container > .detail {
+    font-size: 0.9rem;
+  }
 }

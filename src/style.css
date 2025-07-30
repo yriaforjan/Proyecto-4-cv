@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-:root{
+:root {
   --primary-dark: #f5f5f5;
   --bg-dark: #070707;
   --highlight-dark: #9c7fd7;
@@ -12,7 +12,7 @@
   --hover: #e68a00;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -28,7 +28,7 @@ a {
   cursor: pointer;
 }
 
-button{
+button {
   background: none;
   color: inherit;
   font: inherit;
@@ -39,7 +39,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body{
+body {
   background-image: url("/images/bg_dark.png");
   background-size: cover;
   background-position: center;
@@ -50,29 +50,60 @@ body{
   font-weight: 400;
   letter-spacing: 0.1rem;
   transition: all 0.5s ease-in-out;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
-body.light{
+body.light {
   background-image: url("/images/bg_light.png");
   color: var(--primary-light);
 }
 
-h1{
+h1 {
   font-size: 80px;
   color: var(--highlight-dark);
 }
 
-h2{
+h2 {
   font-size: 30px;
   text-align: center;
   color: var(--highlight-dark);
 }
 
-h3{
+h3 {
   font-size: 18px;
 }
 
-.light h1, .light h2{
+.light h1,
+.light h2 {
   color: var(--highlight-light);
+}
+
+.fade-down {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-down.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#page-transition {
+  position: fixed;
+  inset: 0;
+  background: var(--bg-dark);
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.light #page-transition {
+  background: var(--bg-light);
+}
+
+#page-transition.active {
+  opacity: 1;
+  pointer-events: auto;
 }

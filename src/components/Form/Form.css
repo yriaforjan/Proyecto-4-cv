@@ -5,16 +5,11 @@ form{
     min-width: 500px;
     height: fit-content;
     padding: 1.5rem;
-    background: rgba(245, 245, 245, 0.15);
+    background: rgba(255, 255, 255, 0.12);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8.7px);
-    -webkit-backdrop-filter: blur(8.7px);
-}
-
-.light form{
-    background-color: var(--bg-dark);
-    color: var(--primary-dark);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
 }
 
 form input, form input::placeholder, form textarea, form textarea::placeholder{
@@ -23,7 +18,7 @@ form input, form input::placeholder, form textarea, form textarea::placeholder{
     background-color: var(--decoration);
     border: none;
     border-radius: 5px;
-    color: rgb(255, 219, 157);
+    color: #575757ff;
 }
 
 form input{
@@ -41,26 +36,11 @@ form textarea{
     margin-bottom: 10px;
 }
 
-.light form input, .light form textarea{
-    color: var(--primary-dark);
-}
-
-form input:focus, form textarea:focus{
-    outline: none;
-    border: 2px solid var(--primary-dark);
-}
-
-.light form input:focus, .light form textarea:focus{
-    border-color: var(--primary-light);
-}
-
 form button{
     align-self: center;
-    background-color: var(--bg-dark);
 }
 
 .light form button{
-    background-color: var(--bg-light);
     color: var(--primary-light)
 }
 

@@ -4,11 +4,14 @@ export const Navbar = () => `
     <nav>
         <ul>
             <li class="logo">
-                <a href="#" id="homeLink">
+                <a href="#" id="logoLink">
                     <img src="/images/logo.png" alt="Yria Forján logo"/>
                 </a>
             </li>
             <div class="menu">
+                <li>
+                    <a href="#" id="homeLink">Home</a>
+                </li>
                 <li>
                     <a href="#" id="educationLink">Education</a>
                 </li>

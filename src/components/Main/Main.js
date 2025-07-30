@@ -4,6 +4,7 @@ import { Home } from "../../pages/Home/Home";
 import { Education } from "../../pages/Education/Education";
 import { Projects } from "../../pages/Projects/Projects";
 import { Contact } from "../../pages/Contact/Contact";
+import { setupProjectParallax } from "../../utils/animations";
 
 export const Main = (page) => {
     let main = document.querySelector("main");
@@ -21,6 +22,7 @@ export const Main = (page) => {
         main.innerHTML = Education();
     } else if (page === "projects") {
         main.innerHTML = Projects();
+        setupProjectParallax();
     } else if (page === "contact") {
         main.innerHTML = Contact();
     }

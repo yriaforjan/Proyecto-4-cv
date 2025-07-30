@@ -1,143 +1,202 @@
-.home{
-    margin: auto;
-    gap: 50px;
-} 
-
-.home #profile{
-    place-self: center;
-    display: flex;
-    align-items: end;
-    flex-wrap: wrap;
-    gap: 60px;
+.home {
+  margin: auto;
+  gap: 50px;
 }
 
-.home #intro > p{
-    font-size: 20px;
-    text-align: right;
+.home #profile {
+  place-self: center;
+  display: flex;
+  align-items: end;
+  flex-wrap: wrap;
+  gap: 60px;
 }
 
-.home #avatar{
-    height: 300px;
+.home #intro > p {
+  font-size: 20px;
+  text-align: right;
 }
 
-.home > #about > p{
-    text-align: justify;
-    border-left: 2px solid var(--primary-dark);
-    border-right: 2px solid var(--primary-dark);
-    border-radius: 15px;
-    padding: 0 40px;
+.home #avatar {
+  height: 300px;
 }
 
-.light .home > #about > p{
-    border-color: var(--primary-light);
+.home > #about > p {
+  text-align: justify;
+  border-left: 2px solid var(--primary-dark);
+  border-right: 2px solid var(--primary-dark);
+  border-radius: 15px;
+  padding: 0 40px;
 }
 
-.home > #skills{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
+.light .home > #about > p {
+  border-color: var(--primary-light);
+}
+
+.home > #skills-carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.home > #skills-carousel::before,
+.home > #skills-carousel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.home > #skills-carousel::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    var(--bg-dark) 0%,
+    transparent 100%
+  );
+}
+
+.home > #skills-carousel::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    var(--bg-dark) 0%,
+    transparent 100%
+  );
+}
+
+.light .home > #skills-carousel::before {
+  background: linear-gradient(to right, 
+    var(--bg-light) 0%, 
+    transparent 100%
+  );
+}
+
+.light .home > #skills-carousel::after {
+  background: linear-gradient(to left, 
+    var(--bg-light) 0%, 
+    transparent 100%
+  );
+}
+
+.home #skills {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+.home > #skills-carousel:hover #skills {
+  animation-play-state: paused;
+}
+
+.skills-list li {
+  margin-right: 1rem;
+  user-select: none;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.home #skills p {
+  background-color: var(--bg-light);
+  color: var(--primary-light);
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 1rem;
+}
+
+.light .home #skills p {
+  background-color: var(--primary-light);
+  color: var(--bg-light);
+}
+
+.home button {
+  align-self: center;
+  cursor: help;
+}
+
+.home button:disabled {
+  cursor: not-allowed;
+}
+
+.home h3 {
+  text-transform: uppercase;
+  font-size: 25px;
+  color: var(--highlight-dark);
+}
+
+.home > section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px;
+}
+
+.home > section > ul {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.home section li {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.home section .icon {
+  font-size: 30px;
+}
+
+.home section p {
+  text-align: justify;
+}
+
+@media (max-width: 1024px) {
+  .home {
+    padding: 0;
+  }
+  .home #profile {
     gap: 20px;
+  }
+  .home h1 {
+    font-size: 50px;
+  }
+  .home #intro > p {
+    font-size: 18px;
+  }
+  .home #avatar {
+    height: 230px;
+  }
 }
 
-.home > #skills p{
-    background-color: var(--primary-dark);
-    color: var(--bg-dark);
+@media (max-width: 768px) {
+  .home #profile {
+    justify-content: center;
+    gap: 60px;
+  }
+  .home h1 {
+    text-align: center;
+  }
+  .home #intro > p,
+  .home > #about > p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .home > #about > p {
+    border: none;
+    padding: 0;
+  }
+  .home > section {
     padding: 10px;
-    border-radius: 15px;
-}
-
-.light .home > #skills p{
-    background-color: var(--primary-light);
-    color: var(--bg-light);
-}
-
-.home button{
-    align-self: center;
-    cursor: help;
-}
-
-.home button:disabled{
-    cursor: not-allowed;
-}
-
-.home h3{
-    text-transform: uppercase;
-    font-size: 25px;
-    color: var(--highlight-dark);
-}
-
-.home > section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 80px;
-}
-
-.home > section > ul{
-    padding: 40px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-
-.home section li{
-    display: flex;
-    align-items: center;
-    gap: 1em;
-}
-
-.home section .icon{
-    font-size: 30px;
-}
-
-.home section p{
-    text-align: justify;
-}
-
-@media (max-width: 1024px){
-    .home{
-        padding: 0;
-    }
-    .home #profile{
-        gap: 20px;
-    }
-    .home h1{
-        font-size: 50px;
-    }
-    .home #intro > p{
-        font-size: 18px;
-    }
-    .home #avatar{
-        height: 230px;
-    }
-}
-
-@media (max-width: 768px){
-    .home #profile{
-        justify-content: center;
-        gap: 60px;
-    }
-    .home h1{
-        text-align: center;
-    }
-    .home #intro > p, .home > #about > p{
-        text-align: center;
-    }
-    .home > #skills{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-
-@media (max-width: 480px){
-    .home > #about > p{
-        border: none;
-        padding: 0;
-    }
-    .home > section{
-        padding: 10px;
-    }
-    .home section p{
-        text-align: start;
-    }
+  }
+  .home section p {
+    text-align: start;
+  }
 }

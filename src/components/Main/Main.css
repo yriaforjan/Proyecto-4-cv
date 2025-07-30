@@ -1,5 +1,5 @@
 main{
-    min-height: calc(85vh - 40px);
+    min-height: 85vh;
     margin-top: 10vh;
     padding: 20px 60px;
     display:flex;
@@ -8,7 +8,7 @@ main{
 main section{
     width: 100%;
     margin: auto;
-    padding: 30px;
+    /* padding: 30px; */
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -30,7 +30,7 @@ main section > p{
 
 @media(max-width: 480px){
     main{
-        min-height: calc(80vh - 40px);
+        min-height: 80vh;
         padding: 60px 20px;
     }
 }
