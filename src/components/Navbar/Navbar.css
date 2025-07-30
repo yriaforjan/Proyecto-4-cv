@@ -1,12 +1,16 @@
 nav {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 80px;
+  padding: 0 20px 0 20px;
 }
 
 nav ul {
-  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   gap: 80px;
 }
 
@@ -26,11 +30,11 @@ nav li:hover {
   transform: scale(1.02);
 }
 
-nav li.logo > a {
+nav .logo > a {
   display: flex;
 }
 
-nav li.logo img {
+nav .logo img {
   height: 50px;
 }
 
@@ -43,14 +47,13 @@ nav img {
   filter: invert(0);
 }
 
-nav div.menu {
-  width: 60%;
+nav ul.menu {
   display: flex;
   align-items: center;
   gap: 80px;
 }
 
-nav div.menu li:first-child {
+nav ul.menu li:first-child {
   display: none;
 }
 
@@ -63,29 +66,29 @@ nav .burgerMenu {
   display: none;
 }
 
+nav #themeBtn {
+  margin-left: auto;
+}
+
 nav #themeBtn > img,
 nav #burgerMenu img {
   height: 25px;
 }
 
 @media (max-width: 1024px) {
-  nav ul {
+  nav {
     gap: 40px;
   }
-  nav div.menu {
+  nav ul.menu {
     gap: 40px;
   }
 }
 
 @media (max-width: 768px) {
-  nav ul {
-    gap: 40px;
-    justify-content: start;
-  }
   nav .burgerMenu {
     display: inline-block;
   }
-  nav div.menu {
+  nav ul.menu {
     position: fixed;
     top: 0;
     right: -200px;
@@ -98,26 +101,27 @@ nav #burgerMenu img {
     transition: right 0.3s ease;
     z-index: 100;
   }
-  .light div.menu {
+  .light ul.menu {
     background-color: var(--bg-light);
     color: var(--primary-light);
   }
-  nav div.menu.active {
+  nav ul.menu.active {
     right: 0;
   }
-  nav div.menu li:first-child {
+  nav ul.menu li:first-child {
     display: block;
   }
-  nav ul > li:last-child {
+  nav:last-child {
     margin-left: auto;
   }
 }
 
 @media (max-width: 480px) {
-  nav ul {
+  nav {
     gap: 15px;
+    padding: 0;
   }
-  nav li.logo img {
+  nav .logo img {
     height: 40px;
   }
 }

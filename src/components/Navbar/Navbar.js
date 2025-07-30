@@ -2,37 +2,31 @@ import "./Navbar.css";
 
 export const Navbar = () => `
     <nav>
-        <ul>
-            <li class="logo">
-                <a href="#" id="logoLink">
-                    <img src="/images/logo.png" alt="Yria Forján logo"/>
-                </a>
-            </li>
-            <div class="menu">
-                <li>
-                    <a href="#" id="homeLink">Home</a>
-                </li>
-                <li>
-                    <a href="#" id="educationLink">Education</a>
-                </li>
-                <li>
-                    <a href="#" id="projectsLink">Projects</a>
-                </li>
-                <li>
-                    <a href="#" id="contactLink">Contact</a>
-                </li>
-            </div>
-            <li class="burgerMenu">
-                <button class="burgerMenu" id="burgerMenu">
-                        <img src="/icons/burger-menu.png" alt="menu icon"/>
-                </button>
+        <div class="logo">
+            <a href="#" id="logoLink">
+                <img src="/images/logo.png" alt="Yria Forján logo"/>
+            </a>
+        </div>
+        <ul class="menu">
+            <li>
+                <a href="#" id="homeLink">Home</a>
             </li>
             <li>
-                <button id="themeBtn">
-                    <img src="/icons/dark-mode.png" alt="theme icon"/>
-                </button>
+                <a href="#" id="educationLink">Education</a>
+            </li>
+            <li>
+                <a href="#" id="projectsLink">Projects</a>
+            </li>
+            <li>
+                <a href="#" id="contactLink">Contact</a>
             </li>
         </ul>
+        <button class="burgerMenu" id="burgerMenu">
+            <img src="/icons/burger-menu.png" alt="menu icon"/>
+        </button>
+            <button id="themeBtn">
+                <img src="/icons/dark-mode.png" alt="theme icon"/>
+            </button>
     </nav>
 `;
 
