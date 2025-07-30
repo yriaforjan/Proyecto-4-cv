@@ -1,6 +1,6 @@
 export const data = {
     name: "Yria Forján",
-    occupation: "Web Development Student",
+    occupation: "Junior Web Developer",
     avatar_dark: "/images/avatar-light.png",
     avatar_light: "/images/avatar-dark.png",
     about: "I'm passionate about web development and currently pursuing a Higher Technician in Web Development and a Full-Stack Web Development Master's Program. Previously, I studied and worked in physiotherapy, which helped me develop strong problem-solving and communication skills. Now, I focus on creating functional, visually appealing web applications with an emphasis on clean design and user experience. Always eager to learn, I continuously explore new technologies to build innovative digital solutions.",
