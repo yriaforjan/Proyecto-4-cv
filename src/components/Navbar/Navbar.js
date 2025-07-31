@@ -4,7 +4,7 @@ export const Navbar = () => `
     <nav>
         <div class="logo">
             <a href="#" id="logoLink">
-                <img src="/images/logo.png" alt="Yria Forján logo"/>
+                <img src="/images/logo.webp" alt="Yria Forján logo"/>
             </a>
         </div>
         <ul class="menu">
@@ -22,10 +22,10 @@ export const Navbar = () => `
             </li>
         </ul>
         <button class="burgerMenu" id="burgerMenu">
-            <img src="/icons/burger-menu.png" alt="menu icon"/>
+            <img src="/icons/burger-menu.webp" alt="menu icon"/>
         </button>
             <button id="themeBtn">
-                <img src="/icons/dark-mode.png" alt="theme icon"/>
+                <img src="/icons/dark-mode.webp" alt="theme icon"/>
             </button>
     </nav>
 `;

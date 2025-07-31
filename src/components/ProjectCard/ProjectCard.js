@@ -12,10 +12,10 @@ export const ProjectCard = (project) => `
       <h3>${project.title}</h3>
       <div class="links">
         <a href="${project.github}" target="_blank" aria-label="GitHub repo for ${project.title}">
-          <img src="/icons/github.png" alt="GitHub Icon" />
+          <img src="/icons/github.webp" alt="GitHub Icon" />
         </a>
         <a href="${project.link}" target="_blank" aria-label="Live demo for ${project.title}">
-          <img src="/icons/link.png" alt="Link icon" />
+          <img src="/icons/link.webp" alt="Link icon" />
         </a>
       </div>
     </div>

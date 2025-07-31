@@ -1,8 +1,8 @@
 export const data = {
     name: "Yria Forján",
     occupation: "Junior Web Developer",
-    avatar_dark: "/images/avatar-light.png",
-    avatar_light: "/images/avatar-dark.png",
+    avatar_dark: "/images/avatar-light.webp",
+    avatar_light: "/images/avatar-dark.webp",
     about: "I'm passionate about web development and currently pursuing a Higher Technician in Web Development and a Full-Stack Web Development Master's Program. Previously, I studied and worked in physiotherapy, which helped me develop strong problem-solving and communication skills. Now, I focus on creating functional, visually appealing web applications with an emphasis on clean design and user experience. Always eager to learn, I continuously explore new technologies to build innovative digital solutions.",
 
     skills: [
@@ -79,13 +79,13 @@ export const data = {
         physiotherapyDegree: {
             name: "Bachelor's Degree in Physiotherapy",
             entity: "University of A Coruña",
-            entity_logo: "/images/udc_logo.png",
+            entity_logo: "/images/udc_logo.webp",
             duration: "2015 - 2020"
         },
         physiotherapyMaster: {
             name: "Master's Degree in Pediatric Physiotherapy",
             entity: "Pontifical University of Salamanca",
-            entity_logo: "/images/upsa_logo.png",
+            entity_logo: "/images/upsa_logo.webp",
             duration: "2020 - 2021"
         }
     },
@@ -177,17 +177,17 @@ export const data = {
         {
             name: "GitHub",
             address: "https://github.com/yriaforjan",
-            icon: "/icons/github.png",
+            icon: "/icons/github.webp",
         },
         {
             name: "LinkedIn",
             address: "https://www.linkedin.com/in/yria-forjan-oliveira/",
-            icon: "/icons/linkedin.png",
+            icon: "/icons/linkedin.webp",
         },
         {
             name: "Telegram",
             address: "https://t.me/yriaforjan",
-            icon: "/icons/telegram.png",
+            icon: "/icons/telegram.webp",
         }
     ]
 };

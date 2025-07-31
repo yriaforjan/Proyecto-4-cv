@@ -13,9 +13,9 @@ export const changeTheme = () => {
 
 export const changeIcon = () => {
   const themeIcon = document.querySelector("#themeBtn > img");
-  themeIcon.src = themeIcon.src.includes("/icons/dark-mode.png")
-    ? "/icons/light-mode.png"
-    : "/icons/dark-mode.png";
+  themeIcon.src = themeIcon.src.includes("/icons/dark-mode.webp")
+    ? "/icons/light-mode.webp"
+    : "/icons/dark-mode.webp";
 };
 
 export const Header = () => `
