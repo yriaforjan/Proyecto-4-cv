@@ -3,7 +3,7 @@ import "./ProjectCard.css";
 export const ProjectCard = (project) => `
   <div class="project-card">
     <div class="image-container">
-      <img src="${project.image}" alt="${project.title}" />
+      <img src="${project.image}" alt="${project.title}" loading="lazy"/>
       <div class="detail">
         <p>${project.description}</p>
       </div>
