@@ -19,6 +19,7 @@ export const Home = () => {
           alt="avatar"
           id="avatar"
           class="fade-down"
+          fetchpriority="high"
         />
       </div>
 
