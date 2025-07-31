@@ -4,7 +4,7 @@ export const Navbar = () => `
     <nav>
         <div class="logo">
             <a href="#" id="logoLink">
-                <img src="/images/logo.webp" alt="Yria Forján logo"/>
+                <img src="/images/logo.webp" alt="Yria Forján logo" fetchpriority="high" />
             </a>
         </div>
         <ul class="menu">
