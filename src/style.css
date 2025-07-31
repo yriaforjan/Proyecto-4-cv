@@ -40,7 +40,7 @@ html {
 }
 
 body {
-  background-image: url("/images/bg_dark.png");
+  background-image: url("/images/bg_dark.webp");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -53,7 +53,7 @@ body {
 }
 
 body.light {
-  background-image: url("/images/bg_light.png");
+  background-image: url("/images/bg_light.webp");
   color: var(--primary-light);
 }
 
