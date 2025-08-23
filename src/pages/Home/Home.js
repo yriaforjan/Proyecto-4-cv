@@ -76,8 +76,6 @@ export const Home = () => {
       const avatar = document.getElementById("avatar");
       if (!avatar) return;
 
-      avatar.style.opacity = "0";
-
       setTimeout(() => {
         const newSrc = document.body.classList.contains("light")
           ? data.avatar_dark
