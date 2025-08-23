@@ -16,7 +16,7 @@ export const Form = () => {
             <label for="message">Message:</label>
             <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
 
-            ${Button("Send", "/icons/send.png")}
+            ${Button("Send", "/icons/send.webp")}
         </form>
     `;
 
