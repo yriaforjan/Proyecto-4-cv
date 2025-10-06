@@ -162,9 +162,9 @@ export const Home = () => {
         `;
         document.head.appendChild(styleTag);
 
+        const baseSpeed = 0.02;
         skillsList.style.animationName = animationName;
-        skillsList.style.animationDuration =
-          window.innerWidth <= 480 ? "30s" : "15s";
+        skillsList.style.animationDuration = `${moveDistance * baseSpeed}s`;
         skillsList.style.animationTimingFunction = "linear";
         skillsList.style.animationIterationCount = "infinite";
         skillsList.style.willChange = "transform";
