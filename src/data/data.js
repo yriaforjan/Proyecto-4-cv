@@ -96,6 +96,14 @@ export const data = {
 
     projects: [
         {
+            title: "Retro Videogames RESTful API",
+            description: "Robust backend API built with Express and MongoDB. Implements a secure RESTful API featuring complete CRUD functionality, an advanced Auth/Roles system (JWT & BCrypt), and seamless Cloudinary integration for full-lifecycle image management (secure upload and automated deletion).",
+            tech: ["Node.js", "Express", "Mongo Atlas", "JWT", "BCrypt", "Cloudinary"],
+            image: "/images/projects/backendapivideogames.png",
+            github: "https://github.com/yriaforjan/retro-game-api-backend.git",
+            link: "https://github.com/yriaforjan/retro-game-api-backend.git"
+        },
+        {
             title: "Yumflix (under development)",
             description: "Sleek web app inspired by Netflix's iconic interface, showcasing delicious recipes fetched live from the ThemealDB REST API. Built with Vite and modular JavaScript, it features responsive CSS3 design and a user-friendly light/dark theme toggle. Currently, the project is under active development with exciting features on the way.",
             tech: ["Vite", "JS", "CSS3", "Rest API"],
