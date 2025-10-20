@@ -99,7 +99,7 @@ export const data = {
             title: "Retro Videogames RESTful API",
             description: "Robust backend API built with Express and MongoDB. Implements a secure RESTful API featuring complete CRUD functionality, an advanced Auth/Roles system (JWT & BCrypt), and seamless Cloudinary integration for full-lifecycle image management (secure upload and automated deletion).",
             tech: ["Node.js", "Express", "Mongo Atlas", "JWT", "BCrypt", "Cloudinary"],
-            image: "/images/projects/backendapivideogames.png",
+            image: "/images/projects/backendapivideogames.webp",
             github: "https://github.com/yriaforjan/retro-game-api-backend.git",
             link: "https://github.com/yriaforjan/retro-game-api-backend.git"
         },
