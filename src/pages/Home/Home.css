@@ -19,7 +19,6 @@
 .home #avatar {
   height: 300px;
   width: auto;
-  transition: opacity 0.5s ease-in-out;
   opacity: 0;
 }
 
@@ -54,34 +53,20 @@
 
 .home > #skills-carousel::before {
   left: 0;
-  background: linear-gradient(
-    to right,
-    var(--bg-dark) 0%,
-    transparent 100%
-  );
+  background: linear-gradient(to right, var(--bg-dark) 0%, transparent 100%);
 }
 
 .home > #skills-carousel::after {
   right: 0;
-  background: linear-gradient(
-    to left,
-    var(--bg-dark) 0%,
-    transparent 100%
-  );
+  background: linear-gradient(to left, var(--bg-dark) 0%, transparent 100%);
 }
 
 .light .home > #skills-carousel::before {
-  background: linear-gradient(to right, 
-    var(--bg-light) 0%, 
-    transparent 100%
-  );
+  background: linear-gradient(to right, var(--bg-light) 0%, transparent 100%);
 }
 
 .light .home > #skills-carousel::after {
-  background: linear-gradient(to left, 
-    var(--bg-light) 0%, 
-    transparent 100%
-  );
+  background: linear-gradient(to left, var(--bg-light) 0%, transparent 100%);
 }
 
 .home #skills {
@@ -109,6 +94,7 @@
   padding: 10px;
   border-radius: 15px;
   font-size: 1rem;
+  transition: all 1.5s ease-in-out;
 }
 
 .light .home #skills p {

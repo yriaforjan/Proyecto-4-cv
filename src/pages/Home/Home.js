@@ -71,22 +71,18 @@ export const Home = () => {
     resetFadeDownAnimations();
     initGlobalAnimations();
 
-    // Cambia avatar según tema
     const updateAvatar = () => {
       const avatar = document.getElementById("avatar");
       if (!avatar) return;
-
+      avatar.style.opacity = "0";
       setTimeout(() => {
         const newSrc = document.body.classList.contains("light")
           ? data.avatar_dark
           : data.avatar_light;
-
         if (avatar.src !== newSrc) avatar.src = newSrc;
 
-        setTimeout(() => {
-          avatar.style.opacity = "1";
-        }, 50);
-      }, 250);
+        avatar.style.opacity = "1";
+      }, 750);
     };
 
     document.addEventListener("themeChanged", updateAvatar);

@@ -41,6 +41,7 @@ nav .logo img {
 nav img {
   filter: invert(100%);
   width: auto;
+  transition: 1.5s ease-in-out;
 }
 
 .light nav img {
