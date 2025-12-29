@@ -105,8 +105,8 @@ export const data = {
         },
         {
             title: "Yumflix (under development)",
-            description: "Sleek web app inspired by Netflix's iconic interface, showcasing delicious recipes fetched live from the ThemealDB REST API. Built with Vite and modular JavaScript, it features responsive CSS3 design and a user-friendly light/dark theme toggle. Currently, the project is under active development with exciting features on the way.",
-            tech: ["Vite", "JS", "CSS3", "Rest API"],
+            description: "A Netflix-inspired recipe platform built with React and Vite. It features an advanced UI with Smart Positioning and Portals for fluid hover-previews, delivering a seamless streaming-like experience using TheMealDB API.",
+            tech: ["React", "Vite", "Context API", "Rest API"],
             image: "/images/projects/yumflix.webp",
             github: "",
             link: ""
